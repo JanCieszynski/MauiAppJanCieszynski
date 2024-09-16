@@ -8,7 +8,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="kostka.jpg"
+                Source="koscc.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
@@ -19,18 +19,35 @@
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text="Sprawdz jaki wynik otrzymasz"
+                Text="Jaką kość wybierasz?"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"  />
+            <Button
+                x:Name="CounterBtn1"
+                Text="Rzuć kostką K4" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked1"
+                HorizontalOptions="Fill"
+                ImageSource="kosc4.jpg"/>
+                
+            <Button
+                x:Name="CounterBtn3"
+                Text="Rzuć kostką K10" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked3"
+                HorizontalOptions="Fill" 
+                ImageSource="kosc10.jpg"/>
             <Button
                 x:Name="CounterBtn"
-                Text="Rzuć kostką" 
+                Text="Rzuć kostką K6" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-            <Label
+                HorizontalOptions="Fill" 
+                ImageSource="kostka.jpg"/>
+
+
+                <Label
                 x:Name="rollValueLabel"
                 Text="Wynik rzutu"
                 FontSize="Large"

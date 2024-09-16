@@ -97,6 +97,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\kosc10.jpg" />
+	  <None Remove="Resources\Images\kosc4.jpg" />
+	  <None Remove="Resources\Images\koscc.jpg" />
 	  <None Remove="Resources\Images\kostka.jpg" />
 	</ItemGroup>
 
