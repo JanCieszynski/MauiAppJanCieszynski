@@ -13,7 +13,8 @@
         {
             Random r = new Random();
             int jancieszynski = r.Next(1,7);
-            CounterBtn.Text = "Wylosowany rzut: " + jancieszynski.ToString();
+            rollValueLabel.Text = "Wylosowany rzut: " + jancieszynski.ToString();
+
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
     }
